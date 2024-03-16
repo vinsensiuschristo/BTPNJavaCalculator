@@ -10,6 +10,7 @@ public class Calculator {
         System.out.println("1. Jumlah");
         System.out.println("2. Pengurangan");
         System.out.println("3. Perkalian");
+        System.out.println("4. Pembagian");
         Integer input = scanner.nextInt();
 
 //        System.out.println(scanner);
@@ -37,6 +38,14 @@ public class Calculator {
             var angka2 = scanner.nextInt();
             var hasil = angka1 * angka2;
             System.out.println("Hasil Perkalian nya adalah "+ hasil);
+        } else if (input.equals(4)) {
+            System.out.println("Akan melakukan Pembagian");
+            System.out.print("Masukan angka pertama : ");
+            var angka1 = scanner.nextInt();
+            System.out.print("Masukan angka kedua : ");
+            var angka2 = scanner.nextInt();
+            var hasil = angka1 / angka2;
+            System.out.println("Hasil Pembagian nya adalah "+ hasil);
         }else {
             System.out.println("INPUT ERROR SILAHKAN JALANKAN PROGRAM LAGI");
         }
